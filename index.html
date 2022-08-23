@@ -193,29 +193,31 @@
 
 
             <section class="mt-10 text-white bg-black rounded-xl pl-4">
-                <h1 class="text-white text-4xl font-semibold text-center mb-10">Budget</h1>
+                <h1 class="text-white text-4xl font-semibold text-center pt-8 mb-10">Budget</h1>
                 <div class="text-white">
                     <h1 class="inline">Per Player :</h1>
-                    <input class="rounded w-full pl-2" type="text" placeholder="Player budget amount" style="width:200px;">
-                    <button class="btn btn-primary text-2xl inline w-full hover:bg-blue-500 px-16 mt-4 py-2">Calculate</button>
+                    <input id="amount-field" class="rounded text-black w-full pl-2" type="text" placeholder="Player budget amount" style="width:200px;">
+                    <button id="calculate-btn" class="btn btn-primary text-2xl inline w-full hover:bg-indigo-500 px-16 mt-4 py-2 mb-6">Calculate</button>
                 </div>
-                
-                <h2 class="text-2xl text-center text-white font-semibold mt-6 mb-4">Player Expenses :$<span class="text-rose-500 font-bold" id="total-added-player">00</span>
-                </h2>
+                <h2 class="mt-8 mb-4 inline text-2xl text-center text-white-500 font-bold ">Player Expenses :</h2>
+                <h2 class="mt-8 mb-4 inline text-2xl text-center text-green-500 font-bold">$<span id="player-expenses" class="text-2xl text-center text-green-400 font-bold ">00</span></h2>
+                <br>
+                <br>
+
                 <h1 class="inline">Manager :</h1>
-                <input class="rounded w-full pl-2" type="text" placeholder="Manager amount" style="width:200px;">
+                <input id="manager-salary" class="rounded text-black w-full pl-2" type="text" placeholder="Manager amount" style="width:200px;">
                 <br>
                 <br>
                 <h1 class="inline">Coach :</h1>
-                <input class="rounded w-full pl-2" type="text" placeholder="Coach amount" style="width:200px;">
+                <input id="coach-salary" class="rounded text-black w-full pl-2" type="text" placeholder="Coach amount" style="width:200px;">
                 <br>
                 <br>
-                <button class="bg-amber-700 text-white text-2xl font-medium py-2 hover:bg-amber-400 rounded-lg w-full">Calculate Total</button>
+                <button id="calculate-total-btn" class="bg-amber-700 text-white text-2xl font-medium py-2 hover:bg-amber-400 rounded-lg w-full">Calculate Total</button>
 
                 <br>
                 <br>
-            <h2 class="text-2xl text-center text-white font-semibold mb-6">Total :$<span
-                    class="text-rose-500 font-bold" id="total-added-player">00</span> </h2>
+            <h2 id="total-expenses" class="pb-6 text-2xl text-center text-white font-semibold mb-6">Total :$<span
+                    class="text-rose-500 font-bold">00</span> </h2>
             </section>
             </section>
         </main>
@@ -258,6 +260,7 @@
 
 
     <!-- JavaScript link connected here  -->
+    <script src="js/calculation.js"></script>
     <script src="js/button.js"></script>
 </body>
 <!-- body ending here  -->

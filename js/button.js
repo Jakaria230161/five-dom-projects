@@ -12,7 +12,7 @@ function getPlayer(playerCard) {
         if (playerCard.length > 5) {
         
             alert("Only five players are allowed to selecting in your team.")
-            return;
+            return true;
         }
         
         const tr = document.createElement("tr");
@@ -30,6 +30,7 @@ function getPlayer(playerCard) {
 function clickButton(element) {
 
     const playerName = element.parentNode.parentNode.childNodes[1].innerText
+    
 
     const playerObject = {
         playerName: playerName
@@ -41,17 +42,3 @@ function clickButton(element) {
     getPlayer(playerCardArray);
 } 
 //<-------------------- function end here---------------------->//
-
-// let buttonDisabled = document.getElementById("clickButton");
-//     buttonDisabled.classList.add("disabled");
-
-//   if (playerCard.length > 5) {
-//     clickButton.disabled = false;
-//     }
-//     else {
-//     clickButton.disabled = true;
-// }
-
-//     playerCardArray(element){
-//     element.disabled = true;
-// }
