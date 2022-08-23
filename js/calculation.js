@@ -22,25 +22,29 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 
 // total player expenses calculation end here
 
+
+// team management cost calculation starting here
 document.getElementById("calculate-total-btn").addEventListener("click", function () {
 
     const coachSalary = document.getElementById("coach-salary")
     const coachSalaryString = coachSalary.value;
     const coachSalaryAmount = parseFloat(coachSalaryString);
+    coachSalary.value = "";
+    console.log(coachSalaryAmount);
 
     const managerSalary = document.getElementById("manager-salary")
     const managerSalaryString = managerSalary.value;
     const managerSalaryAmount = parseFloat(managerSalaryString);
+    managerSalary.value = "";
+    console.log(managerSalaryAmount);
 
-    let coachManagerSalary = coachSalaryAmount + managerSalaryAmount;
+    const managementCost = coachSalaryAmount + managerSalaryAmount;
+    console.log(managementCost);
 
-    let allExpenses = finalAmount + coachManagerSalary;
-
-    
     let totalExpenses = document.getElementById("total-expenses");
     let totalExpensesString = totalExpenses.innerText;
-    
-    totalExpenses.innerText = allExpenses;
+    totalExpenses.innerText = managementCost;
     return totalExpenses;
-
 })
+
+// team managementCost ending here 
