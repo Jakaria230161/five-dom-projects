@@ -36,10 +36,9 @@ document.getElementById("calculate-total-btn").addEventListener("click", functio
     const managerSalaryString = managerSalary.value;
     const managerSalaryAmount = parseFloat(managerSalaryString);
     managerSalary.value = "";
-    console.log(managerSalaryAmount);
-
-    const managementCost = coachSalaryAmount + managerSalaryAmount;
-    console.log(managementCost);
+    let totalExpensesGet = document.getElementById("player-expenses");
+    let totalExpensesGetString = parseFloat(totalExpensesGet.innerText);
+    const managementCost = coachSalaryAmount + managerSalaryAmount + totalExpensesGetString;
 
     let totalExpenses = document.getElementById("total-expenses");
     let totalExpensesString = totalExpenses.innerText;
@@ -47,4 +46,5 @@ document.getElementById("calculate-total-btn").addEventListener("click", functio
     return totalExpenses;
 })
 
-// team managementCost ending here 
+// team managementCost ending here
+
