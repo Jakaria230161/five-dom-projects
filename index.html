@@ -64,7 +64,7 @@
                             <h2 class="card-title justify-center font-bold">Lionel Messi</h2>
                             <p>800 Goals | 200 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                             <h2 class="card-title justify-center font-bold">Neymar Jr</h2>
                             <p>400 Goals | 120 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                             <h2 class="card-title justify-center font-bold">Kylian Mbappé</h2>
                             <p>350 Goals | 100 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                             <h2 class="card-title justify-center font-bold"> Salah</h2>
                             <p>360 Goals | 125 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full " onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                             <h2 class="card-title justify-center font-bold">Sadio Mane</h2>
                             <p>260 Goals | 120 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                             <h2 class="card-title justify-center font-bold">Mesut Ozil</h2>
                             <p>166 Goals | 125 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                             <h2 class="card-title justify-center font-bold">Sergio Ramos</h2>
                             <p>250 Goals | 120 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                             <h2 class="card-title justify-center font-bold">Renato Sanches</h2>
                             <p>90 Goals | 30 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
@@ -156,18 +156,18 @@
                             <h2 class="card-title justify-center font-bold">Vítor Machado</h2>
                             <p>90 Goals | 80 Assist</p>
                             <div class="card-actions justify-center">
-                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full">Select</button>
+                                <button class="bg-rose-700 text-white text-2xl font-medium py-2 hover:bg-rose-400 rounded-lg w-full" onclick="clickButton(this);">Select</button>
                             </div>
                         </div>
                     </div>
                     <!-- ... -->
             </section>
 
-            <section class=" mt-14 col-span-4 mr-10">
+            <section class=" mt-14 col-span-4 mr-10 bg-white rounded">
                 <!-- Selected five player-->
                 <div>
-                    <h2 class="text-3xl text-center text-white">Selected Top Five -
-                        <span class="text-rose-500 font-bold" id="total-added-player">0</span>
+                    <h2 class=" px-2 py-2 text-3xl font-semibold text-center text-black">Selected List -
+                        <span class="text-rose-500 font-bold" id="selected-list">0</span>
                     </h2>
                     <!-- table start here  -->
                     <div class="overflow-x-auto">
@@ -175,16 +175,16 @@
                             <!-- head -->
                             <thead>
                                 <tr>
-                                    <th></th>
-                                    <th>Name</th>
+                                    <th>Serial Number</th>
+                                    <th>Player Name</th>
                                 </tr>
                             </thead>
-                            <tbody id="top-player">
+                            <tbody id="card-players">
                                 <!-- row 1 -->
-                                <!-- <tr>
-                                                <th>1</th>
-                                                <td>Cy Ganderton</td>
-                                                <td>Quality Control Specialist</td> -->
+                                <tr>
+                                    <!-- <th>1</th>
+                                    <td>Lionel Messi</td> -->
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -197,7 +197,7 @@
                 <div class="text-white">
                     <h1 class="inline">Per Player :</h1>
                     <input class="rounded w-full pl-2" type="text" placeholder="Player budget amount" style="width:200px;">
-                    <button class="btn btn-primary inline w-full hover:bg-blue-500 px-16 mt-4 py-2">Calculate</button>
+                    <button class="btn btn-primary text-2xl inline w-full hover:bg-blue-500 px-16 mt-4 py-2">Calculate</button>
                 </div>
                 
                 <h2 class="text-2xl text-center text-white font-semibold mt-6 mb-4">Player Expenses :$<span class="text-rose-500 font-bold" id="total-added-player">00</span>
@@ -258,7 +258,7 @@
 
 
     <!-- JavaScript link connected here  -->
-    <script src="js/app.js"></script>
+    <script src="js/button.js"></script>
 </body>
 <!-- body ending here  -->
 
