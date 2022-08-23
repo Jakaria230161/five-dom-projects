@@ -43,3 +43,5 @@ function clickButton(element) {
     getPlayer(playerCardArray);
 } 
 //<-------------------- function end here---------------------->//
+
+// <----------------Thank you so much programming hero team ---------------->//
