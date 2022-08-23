@@ -9,10 +9,11 @@ function getPlayer(playerCard) {
 
         const player = playerCard[i].playerName;
 
-        if (playerCard.length > 5) {
+        if (i > 4) {
         
             alert("Only five players are allowed to selecting in your team.")
-            return true;
+            playerCard.length = 5;
+            return;
         }
         
         const tr = document.createElement("tr");
@@ -31,7 +32,6 @@ function clickButton(element) {
 
     const playerName = element.parentNode.parentNode.childNodes[1].innerText
     
-
     const playerObject = {
         playerName: playerName
     }
